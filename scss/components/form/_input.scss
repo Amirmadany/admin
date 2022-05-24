@@ -1,0 +1,273 @@
+.form-control{
+    
+    &.input-shadow-none{
+        &:hover,
+        &:focus{
+            box-shadow: none !important;
+        } 
+    }
+
+    &:not(.input-shadow-none){
+        
+        &.border-focus-purple-1:focus{
+            box-shadow: 0 0 0 0.25rem #7139ea46 !important;
+        }
+
+        &.border-focus-orange-1:focus{
+            box-shadow: 0 0 0 0.25rem #ffc8003f !important;
+        }
+
+        &.border-focus-red-1:focus{
+            box-shadow: 0 0 0 0.25rem #f1416d40 !important;
+        }
+
+        &.border-focus-cyan-1:focus{
+            box-shadow: 0 0 0 0.25rem #04c8c844 !important;
+        }
+
+        &.border-focus-green-1:focus{
+            box-shadow: 0 0 0 0.25rem #50cd8843 !important;
+        }
+
+        &.border-focus-blue-1:focus{
+            box-shadow: 0 0 0 0.25rem #4e90e63f !important;
+        }
+
+        &.border-focus-dark-4:focus{
+            box-shadow: 0 0 0 0.25rem #72768838 !important;
+        }
+
+        &.border-focus-dark-5:focus{
+            box-shadow: 0 0 0 0.25rem #95aac93a !important;
+        }
+
+        &.border-focus-light-6:focus{
+            box-shadow: 0 0 0 0.25rem #bbbbbb39 !important;
+        }
+
+    }
+    
+    &.input{
+        transition: $content-transition;
+        
+        &:disabled{
+            border-color: $light-color-6;
+            background: none;
+            color: $light-color-6;
+    
+            &::placeholder{
+                color: $light-color-6;
+            }
+        }
+        
+        &.input-solid{
+            background: $light-color-2 !important;
+            padding: 0.55rem 1rem;
+            border: 0;
+            
+            &:focus{
+                background: $light-color-2-dark !important;
+            }
+        }
+
+        &.input-tranparent{
+            background: transparent;
+            border: 0;
+        }
+
+        &.input-modern{
+            box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.07);
+            border: 1px solid $light-color-3;
+            padding: 0.55rem 1rem;
+
+            &:disabled{
+                box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.03) !important;
+                border: 1px solid $light-color-3 !important;
+            }
+
+            // shadow
+            &.shadow-primary,
+            &.focus-shadow-primary:focus{
+                box-shadow: 0 0 15px 5px rgba(78, 144, 230, 0.07);
+                border: 1px solid $primary-color;
+            }
+
+            &.shadow-red-1,
+            &.focus-shadow-red-1:focus{
+                box-shadow: 0 0 15px 5px rgba(241, 65, 109, 0.07);
+                border: 1px solid $red-color-1;
+            }
+
+            &.shadow-blue-1,
+            &.focus-shadow-blue-1:focus{
+                box-shadow: 0 0 15px 5px rgba(78, 144, 230, 0.07);
+                border: 1px solid $blue-color-1;
+            }
+
+            &.shadow-cyan-1,
+            &.focus-shadow-cyan-1:focus{
+                box-shadow: 0 0 15px 5px rgba(4, 200, 200, 0.07);
+                border: 1px solid $cyan-color-1;
+            }
+
+            &.shadow-orange-1,
+            &.focus-shadow-orange-1:focus{
+                box-shadow: 0 0 15px 5px rgba(255, 200, 0, 0.07);
+                border: 1px solid $orange-color-1;
+            }
+
+            &.shadow-purple-1,
+            &.focus-shadow-purple-1:focus{
+                box-shadow: 0 0 15px 5px rgba(113, 57, 234, 0.7);
+                border: 1px solid $purple-color-1;
+            }
+
+            &.shadow-green-1,
+            &.focus-shadow-green-1:focus{
+                box-shadow: 0 0 15px 5px rgba(80, 205, 136, 0.07);
+                border: 1px solid $green-color-1;
+            }
+
+            &.shadow-light-6,
+            &.focus-shadow-light-6:focus{
+                box-shadow: 0 0 15px 5px rgba(187, 187, 187, 0.07);
+                border: 1px solid $light-color-6;
+            }
+
+            &.shadow-dark-1,
+            &.focus-shadow-dark-1:focus{
+                box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.07);
+                border: 1px solid $dark-color-1;
+            }
+        }
+
+        &.input-underline{
+            border: none;
+            border-radius: 0;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            padding: 0.55rem 1rem;
+            border-block-color: $light-color-6;
+            
+            &:focus{
+                box-shadow: none !important;
+                border-bottom-color: $blue-color-1;
+            }
+        }
+        
+    }
+
+}
+
+.input-group{
+    position: relative;
+
+    & .input-group-text{
+
+        &.bind{
+            position: absolute;
+            top: 0;
+            width: 20px;
+            padding: 0.55rem 1rem;
+            background: none;
+            z-index: 10;
+            border: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+    }
+
+    & .form-control{
+        
+        &.input-modern{
+            padding-right: 8% !important;
+        }
+
+        &.input-solid{
+            &:focus{
+                background: $light-color-2 !important;
+            }
+        }
+    }
+
+    &.has-reset-btn{
+
+        & .be-bold{
+            color: $light-color-6 !important;
+
+            & svg{
+                fill: $light-color-6 !important;
+            }
+        }
+
+    }
+
+    &.eye-password{
+
+        & .when-input-is-password{
+            display: block;
+        }
+
+        & .when-input-is-text{
+            display: none;
+        }
+
+        & button.password{
+
+            & .when-input-is-password{
+                display: none;
+            }
+
+            & .when-input-is-text{
+                display: block;
+            }
+
+        }
+        
+    }
+
+    & .error-alert-icon{
+        display: none;
+    }
+
+    & .success-alert-icon{
+        display: none;
+    }
+
+    &.has-error{
+
+        & .error-alert-icon{
+            display: block !important;
+        }
+
+        & input{
+            border: 1px solid $red-color-1 !important;
+            
+            &.input-modern{
+                box-shadow: 0 0 15px 5px rgba(255, 75, 75, 0.09) !important;
+            }
+
+        }
+        
+
+    }
+
+    &.has-success{
+        
+        & .success-alert-icon{
+            display: block !important;
+        }
+
+        & input{
+            border: 1px solid $green-color-1 !important;
+            
+            &.input-modern{
+                box-shadow: 0 0 15px 5px rgba(55, 255, 0, 0.09) !important;
+            }
+
+        }
+
+    }
+}

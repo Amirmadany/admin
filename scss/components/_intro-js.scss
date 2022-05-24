@@ -1,0 +1,105 @@
+body{
+    
+    &.intro-is-showing{
+        overflow: hidden;
+    }
+
+}
+
+.introjs-tooltipReferenceLayer{
+
+    & *{
+        font-family: $font-family !important;
+    }
+    
+    & .introjs-tooltip {
+        max-width: max-content !important;
+        width: 90vw !important;
+
+        & .introjs-skipbutton{
+            position: absolute;
+            left: 0.75rem;
+            bottom: 0.7rem;
+            margin: 0;
+            text-shadow: none;
+            font-weight: 500;
+            box-shadow: none;
+            border: none;
+            outline: none !important;
+            padding: .7rem 1rem !important;
+            font-size: 14px;
+            border-radius: .2em;
+            white-space: nowrap;
+            color: $light-color-1;
+            background-color: $red-color-1;
+        }
+
+        & .introjs-tooltiptext{
+            line-height: 1.8rem;
+        }
+    
+    }
+    
+    & .introjs-bullets{
+    
+        & ul{
+
+            & li{
+                
+                & a{
+                    width: 10px;
+                    height: 10px;
+                }
+
+                & .active,
+                & a:hover{
+                    height: 10px;
+                    width: 10px;
+                    background: $green-color-1 !important;
+                }
+
+            }
+
+        }
+
+    }
+
+    & .introjs-progress{
+        direction: $main-direction;
+
+        & .introjs-progressbar{
+            float: right;
+            background: $green-color-1;
+        }
+    }
+    
+    & .introjs-tooltipbuttons{
+        border: none;
+        float: right;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        
+        & .introjs-button{
+            text-shadow: none;
+            font-weight: 500;
+            box-shadow: none;
+            border: none;
+            outline: none !important;
+            padding: none;
+    
+            &.introjs-nextbutton{
+                background: $green-color-1;
+                color: $light-color-1;
+                float: none !important;
+            }
+    
+            &.introjs-prevbutton{
+                background: none;  
+                float: none !important;
+            }
+        }
+    
+    }
+
+}

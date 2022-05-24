@@ -1,0 +1,35 @@
+@media(max-width: 991px){
+
+    .main-content{
+        width: 100% !important;
+    }
+    
+    .backdrop{
+        
+        &.show{
+            display: block;
+        }
+
+    }
+
+    .introjs-tooltipReferenceLayer{
+        
+        & .introjs-tooltip {
+            width: auto !important;
+        }
+        
+    }
+
+}
+
+@media (max-width: 650px){
+    
+    .main-content{
+
+        & .main{
+            margin-top: 10.5rem;
+        }
+
+    }
+
+}

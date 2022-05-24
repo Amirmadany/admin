@@ -1,0 +1,121 @@
+@import '../../assets/font/font';
+@import '../variables';
+@import '../header/header';
+@import '../sidebar/sidebar';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: $font-family;
+}
+
+button,
+input,
+textarea{
+    border: none;
+    outline: none !important;
+    background: none;
+}
+
+a,
+button{
+    text-decoration: none;
+    cursor: pointer;
+    transition: $content-transition;
+}
+
+body{
+    transition: $main-transition;
+    background: $light-color-4;
+
+    &.style-1{        
+        
+        & .main-content{
+            width: calc(100% - 19rem);
+
+            & .main{
+                margin-top: 5.2rem;
+            }
+        }
+        
+        & .main-content.full{
+            width: calc(100% - 7rem);
+     
+            & .header{
+                width: calc(100% - 7rem);
+            }
+        }
+
+    }
+}
+
+.main-content{
+    width: calc(100% - 22rem);
+    transition: $main-transition;
+
+    &.full{
+        width: calc(100% - 9.45rem);
+
+        & .header{
+            width: calc(100% - 9.45rem);
+        }
+    }
+
+    & .main{
+        margin: 7rem 0 1rem 0;
+        transition: $main-transition;
+    }
+
+}
+
+.backdrop{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    background: rgba(0, 0, 0, 0.55);
+    display: none;
+}
+
+// transitions style
+.main-transition{
+    transition: $main-transition;
+}
+
+.content-transition{
+    transition: $content-transition;
+}
+
+// change bootstrap default
+.dropdown{
+
+    button{
+        &::after{
+            display: none;
+        }
+    }
+
+}
+
+// direction
+.ltr-direction{
+    direction: ltr;
+}
+
+// components
+@import '../components/box';
+@import '../components/badge';
+@import '../components/alert';
+@import '../components/tooltip';
+@import '../components/button';
+@import '../components/pulse';
+@import '../components/form/form';
+@import '../components/codebox';
+@import '../components/breadcrumb';
+
+// library components
+@import '../components/intro-js';
+
+@import 'layout-responsive';

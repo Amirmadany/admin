@@ -1,0 +1,779 @@
+// primary
+.primary-color{
+    color: $primary-color;
+}
+
+.primary-dark-color{
+    color: $primary-dark-color;
+}
+
+.primary-light-color{
+    color: $primary-light-color;
+}
+
+.primary-color-important,
+.hover-text-primary:hover{
+    color: $primary-color !important;
+}
+
+.primary-dark-color-important,
+.hover-text-primary-dark:hover{
+    color: $primary-dark-color !important;
+}
+
+.primary-light-color-important,
+.hover-text-primary-light:hover{
+    color: $primary-light-color !important;
+}
+
+.bg-primary,
+.hover-bg-primary:hover{
+    background-color: $primary-color !important;
+}
+
+.bg-primary-dark{
+    background-color: $primary-dark-color;
+}
+
+.bg-primary-light{
+    background-color: $primary-light-color;
+}
+
+.bg-primary-dark-important,
+.hover-bg-primary-dark:hover{
+    background-color: $primary-dark-color !important;
+}
+
+.bg-primary-light-important,
+.hover-bg-primary-light:hover{
+    background-color: $primary-light-color !important;
+}
+
+// dark
+.dark-color-1{
+    color: $dark-color-1;   
+}
+
+.dark-color-2{
+    color: $dark-color-2;   
+}
+
+.dark-color-3{
+    color: $dark-color-3;   
+}
+
+.dark-color-4{
+    color: $dark-color-4;   
+}
+
+.dark-color-5{
+    color: $dark-color-5;   
+}
+
+.dark-color-1-important,
+.hover-text-dark-1:hover{
+    color: $dark-color-1 !important;   
+}
+
+.dark-color-2-important,
+.hover-text-dark-2:hover{
+    color: $dark-color-2 !important;
+}
+
+.dark-color-3-important,
+.hover-text-dark-3:hover{
+    color: $dark-color-3 !important;   
+}
+
+.dark-color-4-important,
+.hover-text-dark-4:hover{
+    color: $dark-color-4 !important;   
+}
+
+.dark-color-5-important,
+.hover-text-dark-5:hover{
+    color: $dark-color-5 !important;   
+}
+
+.bg-dark-1{
+    background-color: $dark-color-1;   
+}
+
+.bg-dark-2{
+    background-color: $dark-color-2;   
+}
+
+.bg-dark-3{
+    background-color: $dark-color-3;   
+}
+
+.bg-dark-4{
+    background-color: $dark-color-4;   
+}
+
+.bg-dark-5{
+    background-color: $dark-color-5;   
+}
+
+.bg-dark-1-important,
+.hover-bg-dark-1:hover{
+    background-color: $dark-color-1 !important;   
+}
+
+.bg-dark-2-important,
+.hover-bg-dark-2:hover{
+    background-color: $dark-color-2 !important;   
+}
+
+.bg-dark-3-important,
+.hover-bg-dark-3:hover{
+    background-color: $dark-color-3 !important;   
+}
+
+.bg-dark-4-important,
+.hover-bg-dark-4:hover{
+    background-color: $dark-color-4 !important;   
+}
+
+.bg-dark-5-important,
+.hover-bg-dark-5:hover{
+    background-color: $dark-color-5 !important;   
+}
+
+// light
+.light-color-1{
+    color: $light-color-1;   
+}
+
+.light-color-2{
+    color: $light-color-2;   
+}
+
+.light-color-3{
+    color: $light-color-3;   
+}
+
+.light-color-4{
+    color: $light-color-4;   
+}
+
+.light-color-5{
+    color: $light-color-5;   
+}
+
+.light-color-6{
+    color: $light-color-6;   
+}
+
+.light-color-1-important,
+.hover-text-light-1:hover{
+    color: $light-color-1 !important;   
+}
+
+.light-color-2-important,
+.hover-text-light-2:hover{
+    color: $light-color-2 !important;   
+}
+
+.light-color-3-important,
+.hover-text-light-3:hover{
+    color: $light-color-3 !important;   
+}
+
+.light-color-4-important,
+.hover-text-light-4:hover{
+    color: $light-color-4 !important;   
+}
+
+.light-color-5-important,
+.hover-text-light-5:hover{
+    color: $light-color-5 !important;   
+}
+
+.light-color-6-important,
+.hover-text-light-6:hover{
+    color: $light-color-6 !important;   
+}
+
+.bg-light-1{
+    background-color: $light-color-1;   
+}
+
+.bg-light-2{
+    background-color: $light-color-2;   
+}
+
+.bg-light-3{
+    background-color: $light-color-3;   
+}
+
+.bg-light-4{
+    background-color: $light-color-4;   
+}
+
+.bg-light-5{
+    background-color: $light-color-5;   
+}
+
+.bg-light-6{
+    background-color: $light-color-6;   
+}
+
+.bg-light-1-important,
+.hover-bg-light-1:hover{
+    background-color: $light-color-1 !important;   
+}
+
+.bg-light-2-important,
+.hover-bg-light-2:hover{
+    background-color: $light-color-2 !important;   
+}
+
+.bg-light-3-important,
+.hover-bg-light-3:hover{
+    background-color: $light-color-3 !important;   
+}
+
+.bg-light-4-important,
+.hover-bg-light-4:hover{
+    background-color: $light-color-4 !important;   
+}
+
+.bg-light-5-important,
+.hover-bg-light-5:hover{
+    background-color: $light-color-5 !important;   
+}
+
+.bg-light-6-important,
+.hover-bg-light-6:hover{
+    background-color: $light-color-6 !important;   
+}
+
+// red
+.red-color-1{
+    color: $red-color-1;
+}
+
+.red-color-2{
+    color: $red-color-2;
+}
+
+.red-color-3{
+    color: $red-color-3;
+}
+
+.red-color-1-important,
+.hover-text-red-1:hover{
+    color: $red-color-1 !important;
+}
+
+.red-color-2-important,
+.hover-text-red-3:hover{
+    color: $red-color-2 !important;
+}
+
+.red-color-3-important,
+.hover-text-red-3:hover{
+    color: $red-color-3 !important;
+}
+
+.bg-red-1{
+    background-color: $red-color-1;
+}
+
+.bg-red-2{
+    background-color: $red-color-2;
+}
+
+.bg-red-3{
+    background-color: $red-color-3;
+}
+
+.bg-red-1-important,
+.hover-bg-red-1:hover{
+    background-color: $red-color-1 !important;
+}
+
+.bg-red-2-important,
+.hover-bg-red-2:hover{
+    background-color: $red-color-2 !important;
+}
+
+.bg-red-3-important,
+.hover-bg-red-3:hover{
+    background-color: $red-color-3 !important;
+}
+
+// green
+.green-color-1{
+    color: $green-color-1;
+}
+
+.green-color-2{
+    color: $green-color-2;
+}
+
+.green-color-3{
+    color: $green-color-3;
+}
+
+.green-color-1-important,
+.hover-text-green-1:hover{
+    color: $green-color-1 !important;
+}
+
+.green-color-2-important,
+.hover-text-green-2:hover{
+    color: $green-color-2 !important;
+}
+
+.green-color-3-important,
+.hover-text-green-3:hover{
+    color: $green-color-3 !important;
+}
+
+.bg-green-1{
+    background-color: $green-color-1;
+}
+
+.bg-green-2{
+    background-color: $green-color-2;
+}
+
+.bg-green-3{
+    background-color: $green-color-3;
+}
+
+.bg-green-1-important,
+.hover-bg-green-1:hover{
+    background-color: $green-color-1 !important;
+}
+
+.bg-green-2-important,
+.hover-bg-green-2:hover{
+    background-color: $green-color-2 !important;
+}
+
+.bg-green-3-important,
+.hover-bg-green-3:hover{
+    background-color: $green-color-3 !important;
+}
+
+// blue
+.blue-color-1{
+    color: $blue-color-1;
+}
+
+.blue-color-2{
+    color: $blue-color-2;
+}
+
+.blue-color-3{
+    color: $blue-color-3;
+}
+
+.blue-color-1-important,
+.hover-text-blue-1:hover{
+    color: $blue-color-1 !important;
+}
+
+.blue-color-2-important,
+.hover-text-blue-2:hover{
+    color: $blue-color-2 !important;
+}
+
+.blue-color-3-important,
+.hover-text-blue-3:hover{
+    color: $blue-color-3 !important;
+}
+
+.bg-blue-1{
+    background-color: $blue-color-1;
+}
+
+.bg-blue-2{
+    background-color: $blue-color-2;
+}
+
+.bg-blue-3{
+    background-color: $blue-color-3;
+}
+
+.bg-blue-1-important,
+.hover-bg-blue-1:hover{
+    background-color: $blue-color-1 !important;
+}
+
+.bg-blue-2-important,
+.hover-bg-blue-2:hover{
+    background-color: $blue-color-2 !important;
+}
+
+.bg-blue-3-important,
+.hover-bg-blue-3:hover{
+    background-color: $blue-color-3 !important;
+}
+
+.cyan-color-1{
+    color: $cyan-color-1;
+}
+
+.cyan-color-2{
+    color: $cyan-color-2;
+}
+
+.cyan-color-3{
+    color: $cyan-color-3;
+}
+
+.cyan-color-1-important,
+.hover-text-cyan-1:hover{
+    color: $cyan-color-1 !important;
+}
+
+.cyan-color-2-important,
+.hover-text-cyan-2:hover{
+    color: $cyan-color-2 !important;
+}
+
+.cyan-color-3-important,
+.hover-text-cyan-3:hover{
+    color: $cyan-color-3 !important;
+}
+
+.bg-cyan-1{
+    background-color: $cyan-color-1;
+}
+
+.bg-cyan-2{
+    background-color: $cyan-color-2;
+}
+
+.bg-cyan-3{
+    background-color: $cyan-color-3;
+}
+
+.bg-cyan-1-important,
+.hover-bg-cyan-1:hover{
+    background-color: $cyan-color-1 !important;
+}
+
+.bg-cyan-2-important,
+.hover-bg-cyan-2:hover{
+    background-color: $cyan-color-2 !important;
+}
+
+.bg-cyan-3-important,
+.hover-bg-cyan-3:hover{
+    background-color: $cyan-color-3 !important;
+}
+
+.orange-color-1{
+    color: $orange-color-1;
+}
+
+.orange-color-2{
+    color: $orange-color-2;
+}
+
+.orange-color-3{
+    color: $orange-color-3;
+}
+
+.orange-color-1-important,
+.hover-text-orange-1:hover{
+    color: $orange-color-1 !important;
+}
+
+.orange-color-2-important,
+.hover-text-orange-2:hover{
+    color: $orange-color-2 !important;
+}
+
+.orange-color-3-important,
+.hover-text-orange-3:hover{
+    color: $orange-color-3 !important;
+}
+
+.bg-orange-1{
+    background-color: $orange-color-1;
+}
+
+.bg-orange-2{
+    background-color: $orange-color-2;
+}
+
+.bg-orange-3{
+    background-color: $orange-color-3;
+}
+
+.bg-orange-1-important,
+.hover-bg-orange-1:hover{
+    background-color: $orange-color-1 !important;
+}
+
+.bg-orange-2-important,
+.hover-bg-orange-2:hover{
+    background-color: $orange-color-2 !important;
+}
+
+.bg-orange-3-important,
+.hover-bg-orange-3:hover{
+    background-color: $orange-color-3 !important;
+}
+
+
+.purple-color-1{
+    color: $purple-color-1;
+}
+
+.purple-color-2{
+    color: $purple-color-2;
+}
+
+.purple-color-3{
+    color: $purple-color-3;
+}
+
+.purple-color-1-important,
+.hover-text-purple-1:hover{
+    color: $purple-color-1 !important;
+}
+
+.purple-color-2-important,
+.hover-text-purple-2:hover{
+    color: $purple-color-2 !important;
+}
+
+.purple-color-3-important,
+.hover-text-purple-3:hover{
+    color: $purple-color-3 !important;
+}
+
+.bg-purple-1{
+    background-color: $purple-color-1;
+}
+
+.bg-purple-2{
+    background-color: $purple-color-2;
+}
+
+.bg-purple-3{
+    background-color: $purple-color-3;
+}
+
+.bg-purple-1-important,
+.hover-bg-purple-1:hover{
+    background-color: $purple-color-1 !important;
+}
+
+.bg-purple-2-important,
+.hover-bg-purple-2:hover{
+    background-color: $purple-color-2 !important;
+}
+
+.bg-purple-3-important,
+.hover-bg-purple-3:hover{
+    background-color: $purple-color-3 !important;
+}
+
+// when hover on the box's parent
+.hover-box-bg-primary:hover{
+    & .box{
+        background-color: $primary-color !important;
+    }
+}
+
+.hover-box-bg-primary-dark:hover{
+    & .box{
+        background-color: $primary-dark-color !important;
+    }
+}
+
+.hover-box-bg-primary-light:hover{
+    & .box{
+        background-color: $primary-light-color !important;
+    }
+}
+
+// dark
+.hover-box-bg-dark-1:hover{
+    & .box{
+        background-color: $dark-color-1 !important;
+    }
+}
+
+.hover-box-bg-dark-2:hover{
+    & .box{
+        background-color: $dark-color-2 !important;
+    }
+}
+
+.hover-box-bg-dark-3:hover{
+    & .box{
+        background-color: $dark-color-3 !important;
+    }
+}
+
+.hover-box-bg-dark-4:hover{
+    & .box{
+        background-color: $dark-color-4 !important;
+    }
+}
+
+.hover-box-bg-dark-5:hover{
+    & .box{
+        background-color: $dark-color-5 !important;
+    }
+}
+
+// light
+.hover-box-bg-light-1:hover{
+    & .box{
+        background-color: $light-color-1 !important;
+    }
+}
+
+.hover-box-bg-light-2:hover{
+    & .box{
+        background-color: $light-color-2 !important;
+    }
+}
+
+.hover-box-bg-light-3:hover{
+    & .box{
+        background-color: $light-color-3 !important;
+    }
+}
+
+.hover-box-bg-light-4:hover{
+    & .box{
+        background-color: $light-color-4 !important;
+    }
+}
+
+.hover-box-bg-light-5:hover{
+    & .box{
+        background-color: $light-color-5 !important;
+    }
+}
+
+.hover-box-bg-light-6:hover{
+    & .box{
+        background-color: $light-color-6 !important;
+    }
+}
+
+// red
+.hover-box-bg-red-1:hover{
+    & .box{
+        background-color: $red-color-1 !important;
+    }
+}
+
+.hover-box-bg-red-2:hover{
+    & .box{
+        background-color: $red-color-2 !important;
+    }
+}
+
+.hover-box-bg-red-3:hover{
+    & .box{
+        background-color: $red-color-3 !important;
+    }
+}
+
+// blue
+.hover-box-bg-blue-1:hover{
+    & .box{
+        background-color: $blue-color-1 !important;
+    }
+}
+
+.hover-box-bg-blue-2:hover{
+    & .box{
+        background-color: $blue-color-2 !important;
+    }
+}
+
+.hover-box-bg-blue-3:hover{
+    & .box{
+        background-color: $blue-color-3 !important;
+    }
+}
+
+// cyan
+.hover-box-bg-cyan-1:hover{
+    & .box{
+        background-color: $cyan-color-1 !important;
+    }
+}
+
+.hover-box-bg-cyan-2:hover{
+    & .box{
+        background-color: $cyan-color-2 !important;
+    }
+}
+
+.hover-box-bg-cyan-3:hover{
+    & .box{
+        background-color: $cyan-color-3 !important;
+    }
+}
+
+// purple
+.hover-box-bg-purple-1:hover{
+    & .box{
+        background-color: $purple-color-1 !important;
+    }
+}
+
+.hover-box-bg-purple-2:hover{
+    & .box{
+        background-color: $purple-color-2 !important;
+    }
+}
+
+.hover-box-bg-purple-3:hover{
+    & .box{
+        background-color: $purple-color-3 !important;
+    }
+}
+
+// orange
+.hover-box-bg-orange-1:hover{
+    & .box{
+        background-color: $orange-color-1 !important;
+    }
+}
+
+.hover-box-bg-orange-2:hover{
+    & .box{
+        background-color: $orange-color-2 !important;
+    }
+}
+
+.hover-box-bg-orange-3:hover{
+    & .box{
+        background-color: $orange-color-3 !important;
+    }
+}
+
+// green
+.hover-box-bg-green-1:hover{
+    & .box{
+        background-color: $green-color-1 !important;
+    }
+}
+
+.hover-box-bg-green-2:hover{
+    & .box{
+        background-color: $green-color-2 !important;
+    }
+}
+
+.hover-box-bg-green-3:hover{
+    & .box{
+        background-color: $green-color-3 !important;
+    }
+}

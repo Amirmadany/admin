@@ -1,0 +1,597 @@
+body{
+
+    &.style-1{
+
+        & .sidebar{
+            padding: 0 !important;
+            width: 19rem;
+    
+            & .sidebar-content{
+                border-radius: 0 !important;  
+                box-shadow: none;
+                border-left: 1px solid $light-color-4 !important;
+            }
+    
+            &.mini{
+                width: 7rem;
+    
+                & .sidebar-tab-content{
+                    top: 0;
+                    height: calc(100%);
+                    right: 7rem;
+                    border-right: 1px solid $light-color-4;
+                    background: $light-color-1;
+                    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.05);
+                }
+    
+                & .mCSB_dragger{
+                    margin-left: -0.5rem !important;    
+                }
+    
+            }
+        }
+
+    }
+
+    &.ltr{
+
+        & .sidebar{
+
+            & .sidebar-content{
+
+                & .card-body{
+
+                    &.mCustomScrollbar{
+                
+                        & .mCSB_container{
+                            margin-right: 0 !important;
+                            padding-right: 0 !important;
+                        }
+                        
+                        & .mCSB_1_dragger_vertical{
+                            margin-left: 0 !important;
+                            padding-left: 0 !important;
+                        }
+                        
+                    }
+
+                }
+
+            }
+
+            & .sidebar-item{
+    
+                & > .sidebar-link{
+
+                    & .sidebar-item-text{
+                        transform: translate(0, 2px);
+                    }
+                    
+                }
+
+                &:not(.sidebar-item-sub){
+
+                    & > .sidebar-link{
+
+                        & .sidebar-item-sub-icon{
+                            transform: translate(-5px , 16px) rotate(180deg);
+                        }
+
+                    }   
+                    
+                    &.active{
+                        
+                        & > .sidebar-link{
+                   
+                            & .sidebar-item-sub-icon{
+                                transform: translate(-14px, 50%) rotate(270deg) !important;
+                            }
+                        }
+
+                    }
+
+                }
+
+                &.sidebar-item-sub{
+
+                    & > .sidebar-link{
+
+                        & .sidebar-item-sub-icon{
+                            transform: translate(0, 5%) rotate(180deg) ;
+                        }
+
+                    }
+                    
+                }
+            
+            }
+
+            &.mini{
+
+                & .sidebar-content{
+                    
+                    & .card-body{
+        
+                        & .sidebar-items{
+                            padding: 0 !important;
+            
+                            & .sidebar-item{
+                                
+                                &::before{
+                                    left: 0;
+                                    border-radius: 0 3px 3px 0;
+                                }
+        
+                                & .sidebar-link{
+                                    
+                                    & > .box{
+                                        transform: translateX(31px)
+                                    }
+                                    
+                                }
+            
+                            }
+        
+                        }
+        
+                        & .mCSB_dragger{
+                            margin-left: 0.395rem !important;    
+                        }
+            
+                    }
+        
+                }
+
+                & .sidebar-tab-content{
+                    left: 7.95rem;
+                    border-left: 1px solid $light-color-5;
+                    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.05);
+                    border-radius: 0 10px 10px 0;
+            
+                    // for custom scroll 
+                    & .mCSB_dragger{
+                        margin-left: 0.1rem !important;    
+                    }
+        
+                    & .mCSB_container{
+                        transition: width 0.5s !important;
+                        margin-right: 0 !important;
+                        padding-right: 0 !important;
+                    }
+                    
+                    & .mCSB_1_dragger_vertical{
+                        margin-left: 0 !important;
+                        padding-left: 0 !important;
+                    }
+        
+                }
+
+                &.pickup-radius{
+                    
+                    & .sidebar-content{
+                        border-radius: 10px 0 0 10px !important;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+.sidebar{
+    width: 21.5rem;
+    z-index: 20;
+    transition: $main-transition;
+
+    & .sidebar-content{
+        box-shadow: 0 0 25px 20px rgba(0, 0, 0, 0.05);
+        transition: background 0.4s ease, color 0.4s ease, width 0.4s ease;
+        
+        & .card-header{
+
+            & .sidebar-brand{
+                white-space: nowrap;
+                overflow: hidden;
+
+                & .sidebar-brand-image{
+                    transition: $main-transition;
+                }
+
+                & .sidebar-brand-info{
+                    transition: $main-transition;
+                }
+
+            }
+
+        }
+
+        & .card-body{
+
+            & .sidebar-items{
+                transition: $main-transition;
+
+                & .sidebar-item{
+                    white-space: nowrap;
+                    transition: $main-transition;
+
+                    &.active{
+
+                        &.has-sub{
+                            & > .sidebar-link{
+                                background-color: $primary-light-color;
+                            }
+                        }
+                        
+                        & > .sidebar-link{
+                            background-color: $primary-color;
+                            color: $light-color-1 !important;
+                            transition: color 0.4s ease;
+
+                            &:hover{
+                                box-shadow: none;
+                            }
+
+                            & svg{
+                                fill: $light-color-1;
+                            }
+
+                            & .sidebar-item-sub-icon{
+                                transform: translate(-5px, 50%) rotate(-90deg) ;
+                            }
+                        }
+
+                    }
+
+                    & > .sidebar-link{
+                        padding: 0.7rem;
+
+                        &:hover{
+                            color: $dark-color-4;
+                            box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.07);
+                        }
+
+                        & .box{
+                            transition: $main-transition;
+                        }
+
+                        & .sidebar-item-text{
+                            max-width: 11.5rem;
+                            text-overflow: ellipsis;
+                        }
+
+                    }
+                    
+                    &.active-main{
+                        transition: none !important;
+                        
+                        & > .sidebar-link{
+                            background: $primary-color !important;
+                            color: $light-color-1;
+                            transition: none !important;
+
+                            & svg{
+                                fill: $light-color-1;
+                            }
+                        }
+                    }
+
+                }
+
+                & > .sidebar-item{
+
+                    &.active{
+
+                        & .pulse-parent{
+                            display: none;
+                        }
+
+                    }
+
+                }
+
+            }
+
+            &:hover{
+                
+                &.mCustomScrollbar{
+
+                    & .mCSB_dragger_bar, 
+                    & .mCSB_draggerRail{
+                        opacity: 1;
+                    }
+                }
+
+            }
+
+            &.mCustomScrollbar{
+                
+                & .mCSB_container{
+                    transition: width 0.5s !important;
+                    margin-left: 0 !important;
+                    padding-left: 0 !important;
+                }
+                
+                & .mCSB_1_dragger_vertical{
+                    margin-right: 0 !important;
+                    padding-right: 0 !important;
+                }
+                
+                & .mCSB_1_dragger_onDrag{
+                    transition: none !important;
+                }
+                
+                & .mCSB_dragger_bar{
+                    background: #4e90e64b !important;
+                    opacity: 0;
+                }
+
+                & .mCSB_draggerRail{
+                    opacity: 0;
+                }
+
+            }
+
+        }
+
+    }
+
+    // public
+    & .sidebar-item.sidebar-item-sub{
+                        
+        &.active{
+            color: $dark-color-3 !important;
+            
+            & > .sidebar-link{
+                & .sidebar-item-sub-icon{
+                    transform: rotate(-90deg) !important;
+                }
+            }
+
+        }
+
+        &.active,
+        &:hover{
+
+            & > .sidebar-link{
+                background: none !important;
+                box-shadow: none !important;
+                
+                & .sidebar-item-text{
+                    color: $primary-dark-color !important;
+                }
+
+                & .dot{
+                    background-color: $primary-dark-color !important;
+                }
+
+                & svg{
+                    fill: $primary-dark-color !important;
+                }
+
+            }
+            
+        }
+
+        & .sidebar-link{
+            position: relative;
+            padding: 0 !important;
+
+            & .sidebar-item-text{
+                max-width: 10.5rem;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+
+        }
+        
+    }
+
+    &.mini{
+        width: 8.9rem;
+
+        & .sidebar-content{
+
+            & .card-header{
+
+                & .sidebar-brand{
+                    position: relative;
+                    min-height: 48px;
+
+                    & .sidebar-brand-image{
+                        transform: none !important;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        bottom: 0;
+                        right: 0;
+                        margin: auto;
+                    }
+
+                    & .sidebar-brand-info{
+                       opacity: 0;
+                       display: none !important;
+                       pointer-events: none;
+                    }
+
+                }
+    
+            }
+            
+            & .card-body{
+
+                & .sidebar-items{
+                    padding: 0 !important;
+    
+                    & .sidebar-item{
+                        
+                        &::before{
+                            content: ' ';
+                            position: absolute;
+                            right: 0;
+                            background-color: $primary-color;
+                            width: 0.35rem;
+                            height: 1.3rem;
+                            border-radius: 3px 0 0 3px;
+                            transform: translateY(72%);
+                            transition: all 0.35s ease;
+                            opacity: 0;
+                        }
+
+                        &.active,
+                        &.active-main,
+                        &:hover{
+
+                            & .sidebar-link{
+                                background: transparent !important;
+                                color: $primary-color;
+                                box-shadow: none;
+                                overflow: hidden;
+
+                                & svg{
+                                    fill: $primary-color;
+                                }
+                            }
+
+                            &::before{
+                                opacity: 1;
+                            }
+
+                        }
+    
+                        & .sidebar-link{
+                            
+                            & > .box{
+                                transform: translateX(-31px)
+                            }
+
+                            & .sidebar-item-text{
+                                color: $light-color-1;
+                                opacity: 0;
+                            }
+
+                            & .sidebar-item-sub-icon{
+                                opacity: 0;
+                                width: 0 !important;
+                                height: 0 !important;
+                            }
+
+                        }
+
+                        &.active-main,
+                        &.active{
+                            & > .sidebar-link > .sidebar-item-sub-icon{
+                                display: none !important;
+                            }
+                        }
+    
+                    }
+
+                    & > .sidebar-item{
+
+                        &.active,
+                        &.active-main{
+
+                            & .pulse-parent{
+                                display: block;
+                            }
+
+                        }
+
+                    }
+    
+                }
+
+                & .mCSB_dragger{
+                    margin-left: -0.395rem !important;    
+                }
+    
+            }
+
+            & .card-footer{
+                
+                & .footer-items{
+                    flex-direction: column !important;
+                                        
+                    & .footer-item{
+                        margin-bottom: 1.5rem;
+                        
+                        &:last-child{
+                            margin-bottom: 0;
+                        }
+
+                    }
+                }
+
+            }
+
+        }
+
+        & .sidebar-tab-content{
+            width: 18.5rem;
+            height: calc(100% - 2rem);
+            position: fixed;
+            top: 1rem;
+            right: 7.95rem;
+            border-right: 1px solid $light-color-5;
+            background: $light-color-1;
+            box-shadow: -5px 0 10px rgba(0, 0, 0, 0.05);
+            border-radius: 10px 0 0 10px;
+    
+            & .sidebar-item-sub-title,
+            & .card-footer,
+            & .card-header {
+                display: flex !important;
+            }
+
+            // for custom scroll 
+            & .mCSB_dragger{
+                margin-left: -0.1rem !important;    
+                padding-top: 1rem !important;
+                padding-bottom: 1rem !important;
+
+                & .mCSB_dragger_bar{
+                    background: $dark-color-4 !important;
+                }
+        
+                & .mCSB_draggerRail{
+                    opacity: 1;
+                    background: transparent !important;
+                }
+    
+                & .mCSB_dragger_bar{
+                    background: #2b80ee4b !important;
+                }
+            }
+
+            & .mCSB_container{
+                transition: width 0.5s !important;
+                margin-left: 0 !important;
+                padding-left: 0 !important;
+            }
+            
+            & .mCSB_1_dragger_vertical{
+                margin-right: 0 !important;
+                padding-right: 0 !important;
+            }
+            
+            & .mCSB_1_dragger_onDrag{
+                transition: none !important;
+            }
+
+        }
+
+        &.pickup-radius{
+            & .sidebar-content{
+                border-radius: 0 10px 10px 0 !important;
+            }
+        }
+
+    }
+    
+}
+
+@import 'sidebar-responsive';

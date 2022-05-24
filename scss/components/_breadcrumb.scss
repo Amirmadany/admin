@@ -1,0 +1,27 @@
+.breadcrumb{
+    
+    & .breadcrumb-item{
+
+        & a{
+            color: $dark-color-5;
+
+            &:hover{
+                color: $dark-color-4;
+            }
+        }
+
+        &.active{
+
+            & a{
+                color: $dark-color-4;
+    
+                &:hover{
+                    color: $dark-color-3;
+                }
+            }
+
+        }
+        
+    }
+
+}

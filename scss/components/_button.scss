@@ -1,0 +1,51 @@
+.button{
+    cursor: pointer;
+    padding: 0.5rem 0.9rem;
+    font-size: 14px;
+    border-radius: 6px;
+    display: inline-block;
+
+    // color
+    &.button-primary{
+        background-color: $primary-color;
+        color: $light-color-1;
+    }
+
+    // dark & light
+
+    &.button-red{
+        background-color: $red-color-1;
+        color: $light-color-1;
+    }
+
+    &.button-orange{
+        background-color: $orange-color-1;
+        color: $light-color-1;
+    }
+
+    &.button-blue{
+        background-color: $blue-color-1;
+        color: $light-color-1;
+    }
+
+    &.button-cyan{
+        background-color: $cyan-color-1;
+        color: $light-color-1;
+    }
+
+    &.button-purple{
+        background-color: $purple-color-1;
+        color: $light-color-1;
+    }
+
+    &.button-green{
+        background-color: $green-color-1;
+        color: $light-color-1;
+    }
+    
+    // size
+    &.button-big{
+        padding: 0.7rem 1.55rem;   
+    }
+
+}

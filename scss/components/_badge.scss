@@ -1,0 +1,38 @@
+.badge{
+
+    &.badge-light{
+        background: $light-color-2;
+        color: $dark-color-4;
+    }
+
+    &.badge-red{
+        background: $red-color-1;
+        color: $light-color-1;
+    }
+
+    &.badge-green{
+        background: $green-color-1;
+        color: $light-color-1;
+    }
+    
+    &.badge-blue{
+        background: $blue-color-1;
+        color: $light-color-1;
+    }
+
+    &.badge-cyan{
+        background: $cyan-color-1;
+        color: $light-color-1;
+    }
+
+    &.badge-orange{
+        background: $orange-color-1;
+        color: $light-color-1;
+    }
+
+    &.badge-purple{
+        background: $purple-color-1;
+        color: $light-color-1;
+    }
+    
+}

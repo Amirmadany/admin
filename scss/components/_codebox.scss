@@ -1,0 +1,49 @@
+.codebox{
+    border-radius: 10px;
+    max-height: 27.8rem;
+    min-height: 100px;
+    position: relative;
+    overflow: auto;
+    margin: auto;
+    direction: ltr;
+    transition: $main-transition;
+
+    & .CodeMirror{
+        padding: 1rem 0;
+        min-height: 100px;
+        height: auto !important;
+    }
+
+    &.mCustomScrollbar{
+                
+        & .mCSB_container{
+            transition: width 0.5s !important;
+            margin-right: 0 !important;
+            padding-right: 0 !important;
+        }
+        
+        & .mCSB_1_dragger_vertical{
+            margin-left: 0 !important;
+            padding-left: 0 !important;
+        }
+        
+        & .mCSB_1_dragger_onDrag{
+            transition: none !important;
+        }
+        
+        & .mCSB_dragger_bar{
+            background: $green-color-1 !important;
+            opacity: 1;
+        }
+
+        & .mCSB_draggerRail{
+            opacity: 1;
+        }
+        
+        & .mCSB_dragger_bar{
+            width: 5px !important;
+        }
+
+    }
+
+}

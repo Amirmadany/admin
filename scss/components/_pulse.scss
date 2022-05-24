@@ -1,0 +1,271 @@
+.pulse{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    position: relative;
+
+    &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        animation: pulse 2.5s infinite;
+    }
+
+    // colors
+    &.red{
+        background-color: $red-color-1;
+
+        &::before{
+            background-color: $red-color-1;
+        }
+
+    }
+
+    &.green{
+        background-color: $green-color-1;
+
+        &::before{
+            background-color: $green-color-1;
+        }
+
+    }
+
+    &.purple{
+        background-color: $purple-color-1;
+
+        &::before{
+            background-color: $purple-color-1;
+        }
+
+    }
+    
+    &.orange{
+        background-color: $orange-color-1;
+
+        &::before{
+            background-color: $orange-color-1;
+        }
+
+    }
+
+    &.cyan{
+        background-color: $cyan-color-1;
+
+        &::before{
+            background-color: $cyan-color-1;
+        }
+
+    }
+
+    &.blue{
+        background-color: $blue-color-1;
+
+        &::before{
+            background-color: $blue-color-1;
+        }
+    }
+
+    &.white{
+        background-color: $light-color-1;
+
+        &::before{
+            background-color: $light-color-1;
+        }
+    }
+
+    &.dark{
+        background-color: $dark-color-1;
+
+        &::before{
+            background-color: $dark-color-1;
+        }
+    }
+
+    &.primary{
+        background-color: $primary-color;
+
+        &::before{
+            background-color: $primary-color;
+        }
+    }
+
+    // colors-inner
+    &.bg-transparent-inner{
+        
+        &::before{
+            background: transparent;
+        }
+
+    }
+
+    // sizes
+    &.pulse-2px{
+        width: 2px;
+        height: 2px;
+    }
+
+    &.pulse-4px{
+        width: 4px;
+        height: 4px;
+    }
+
+    &.pulse-6px{
+        width: 6px;
+        height: 6px;
+    }
+
+    &.pulse-8px{
+        width: 8px;
+        height: 8px;
+    }
+
+    &.pulse-10px{
+        width: 10px;
+        height: 10px;
+    }
+
+    &.pulse-12px{
+        width: 12px;
+        height: 12px;
+    }
+
+    &.pulse-14px{
+        width: 14px;
+        height: 14px;
+    }
+
+    &.pulse-16px{
+        width: 16px;
+        height: 16px;
+    }
+
+    // borders 
+
+    // times
+    &.pulse-1s{
+
+        &::before{
+            animation: pulse 1s infinite;
+        }
+        
+    }
+
+    &.pulse-2s{
+
+        &::before{
+            animation: pulse 2s infinite;
+        }
+        
+    }
+
+    &.pulse-3s{
+
+        &::before{
+            animation: pulse 3s infinite;
+        }
+        
+    }
+
+    // percentage sizes
+    &.pulse-2x{
+        &::before{
+            animation: pulse-2 2.5s infinite;
+        }
+    }
+
+    &.pulse-3x{
+        &::before{
+            animation: pulse-3 2.5s infinite;
+        }
+    }
+
+    &.pulse-4x{
+        &::before{
+            animation: pulse-4 2.5s infinite;
+        }
+    }
+
+    // models
+    &.pulse-blink{
+        animation: pulse-blink 1s steps(5, start) infinite;
+        
+        &::before{
+            display: none;
+        }
+
+    }
+
+}
+
+// animation for pulse
+@keyframes pulse {
+    0%{
+        transform: scale(1);
+        opacity: 0;
+    }
+    70%{
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100%{
+        transform: scale(5);
+        opacity: 0;
+    }
+}
+
+@keyframes pulse-4 {
+    0%{
+        transform: scale(1);
+        opacity: 0;
+    }
+    70%{
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100%{
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+@keyframes pulse-3 {
+    0%{
+        transform: scale(1);
+        opacity: 0;
+    }
+    70%{
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100%{
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
+@keyframes pulse-2 {
+    0%{
+        transform: scale(1);
+        opacity: 0;
+    }
+    70%{
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100%{
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+@keyframes pulse-blink {
+    to {
+        visibility: hidden;
+    }
+}

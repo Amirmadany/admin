@@ -1,0 +1,56 @@
+$font-family: 'Vazir';
+$font-weight: 500;
+
+$main-transition: all 0.4s ease;
+$content-transition: all 0.3s;
+
+$main-direction: ltr;
+$second-direction: rtl;
+
+$primary-color: #4e91e6;
+$primary-dark-color: #4880ca; 
+$primary-light-color: #76b0fb;
+
+$light-color-1: #fff;
+$light-color-2: #f5f8fa; // 3
+$light-color-2-dark: #eef3f7;
+$light-color-3: #f1f1f1; // 2
+$light-color-4: #f5f9fc; // 7
+$light-color-5: #eeeeee; // 4
+$light-color-6: #bbbbbb; // 5
+
+$dark-color-1: #222; // 2
+$dark-color-2: #333; // 1
+$dark-color-3: #343a40; // 7
+$dark-color-4: #727688; // 8
+$dark-color-5: #95aac9; // 4
+
+$red-color-1: #f1416c;
+$red-color-2: #eed0cc;
+$red-color-3: #fff5f8;
+
+$green-color-1: #50cd89;
+$green-color-2: #c7e8d0;
+$green-color-3: #e8fff3;
+
+$blue-color-1: #4e91e6;
+$blue-color-2: #c2d4e7;
+$blue-color-3: #f1faff;
+
+$cyan-color-1: #04c8c8;
+$cyan-color-2: #bcffff;
+$cyan-color-3: #dcfdfd;
+
+$orange-color-1: #ffc700;
+$orange-color-2: #fbe9cc;
+$orange-color-3: #fff8dd;
+
+$purple-color-1: #7239ea;
+$purple-color-2: #e6dbff;
+$purple-color-3: #f8f5ff;
+
+// mini components
+@import 'components/colors';
+@import 'components/border';
+@import 'components/size';
+@import 'components/fonts';
